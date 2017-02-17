@@ -1,5 +1,3 @@
-
-// author: sonia
 public with sharing class AccountHandler {
 	public AccountHandler() {
 		
