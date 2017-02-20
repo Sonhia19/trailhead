@@ -25,6 +25,8 @@ public with sharing class AccountHandler {
 		for(Integer i = 0; i < accts.size() ; i++ ){
 			System.debug(accts[i].name);
 		}
+
+		
 		return true;
 	}
 }
