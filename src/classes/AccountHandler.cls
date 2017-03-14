@@ -1,5 +1,3 @@
-
-// author: sonia
 public with sharing class AccountHandler {
 	public AccountHandler() {
 		
@@ -21,12 +19,15 @@ public with sharing class AccountHandler {
 		}
 	}
 
-	public static boolean selectAccounts (){
+	public static boolean selectAccounts () {
+	
 		Account [] accts = [SELECT Name, Phone FROM Account];
 
-		for(Integer i = 0; i < accts.size() ; i++ ){
+		for(Integer i = 0; i < accts.size() ; i++ ) {
+		
 			System.debug(accts[i].name);
-		}
+		}
+				
 		return true;
 	}
 }
